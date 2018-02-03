@@ -1,0 +1,17 @@
+<h2>My Links</h2>
+<div>
+  <label>Link name:
+    <input #linkName />
+  </label>
+  <button (click)="add(linkName.value); linkName.value=''">
+    Add
+  </button>
+</div>
+<ul class="links">
+  <li *ngFor="let link of links">
+    <a routerLink="/detail/{{link.id}}">
+      <span class="badge">{{link.id}}</span> {{link.name}}
+    </a>
+    <button class="delete" title="delete link" (click)="delete(link)">x</button>
+  </li>
+</ul>

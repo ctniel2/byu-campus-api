@@ -1,0 +1,175 @@
+@media all and (max-width: 768px) {
+  #portalPageBar {
+    background: linear-gradient(to bottom, #6e8190 0, #3b5a77 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    font: 25px "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  #search-text {
+    position: fixed;
+    left: 82em;
+    top: 0.75em;
+    font-size: large;
+  }
+
+  #search-bar {
+    position: fixed;
+    height: 20px;
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    right: 1em;
+    top: 1em;
+  }
+
+  #search-bar:focus {
+    /*width : 150px;*/
+  }
+
+  #mobile-picture-header {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    top: 2em;
+    position: relative;
+  }
+
+  #app-display {
+    position: relative;
+    top: 2em;
+  }
+
+  #desktop-picture-header {
+    display: none;
+  }
+
+  #site-name {
+    position: fixed;
+    left: 15%;
+    top: 1%;
+  }
+
+  #site-title {
+    display: none;
+  }
+
+  .settings {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 9.5%;
+    z-index: 3;
+    color: black;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+}
+
+@media only screen and (min-width: 769px) {
+  #portalPageBar {
+    background: linear-gradient(to bottom, #6e8190 0, #3b5a77 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4%;
+    padding: 5px 50px;
+    font: 25px "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+  }
+
+  #site-name {
+    position: fixed;
+    left: 18%;
+  }
+
+  #site-logo {
+    width: 5%;
+    height: 3%;
+    cursor: pointer;
+  }
+
+  #toolbar {
+    position: fixed;
+    top: 1%;
+    left: 80%;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .account, .drop-down, .home {
+    color: lightgray;
+  }
+
+  .account:hover, .drop-down:hover, .home:hover {
+    color: white;
+  }
+
+  #user-name {
+    position: fixed;
+    top: -2.5%;
+    right: 21%;
+    z-index: 1000;
+    color: white;
+  }
+
+  app-link-search {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    padding: 2px;
+    position: fixed;
+    height: 3%;
+    width: 8%;
+    left: 22%;
+    top: .5%;
+  }
+
+  #search-bar {
+    flex-grow: 2;
+    border: none;
+  }
+
+  #mobile-picture-header {
+    display: none;
+  }
+
+  #desktop-picture-header {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    width: 5000px;
+    height: 100%;
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  #app-display {
+    position: absolute;
+    padding-left: 25px;
+    width: 98%;
+    z-index: 2;
+  }
+
+  .settings {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 4.9%;
+    z-index: 3;
+    color: black;
+    background-color: rgba(0,0,0,0.6);
+  }
+}

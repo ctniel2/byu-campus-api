@@ -1,0 +1,54 @@
+<!-- Interface for Mobile Devices -->
+<div id="mobile">
+
+</div>
+
+<!-- Interface for Desktop and Laptops -->
+<div id="desktop">
+  <div id="sidebar-list">
+    <div *ngIf="currentPage === 0" class="sidebar-item-active">
+      <i class="material-icons md-36">link</i>
+      <h4>My Links</h4>
+    </div>
+    <div *ngIf="currentPage != 0" class="sidebar-item" (click)="gotoDashboard()">
+      <i class="material-icons md-36">link</i>
+      <h4>My Links</h4>
+    </div>
+    <div *ngIf="currentPage === 1" class="sidebar-item-active">
+      <i class="material-icons md-36">explore</i>
+      <h4>Explore Links</h4>
+    </div>
+    <div *ngIf="currentPage != 1" class="sidebar-item" (click)="gotoExplore()">
+      <i class="material-icons md-36">explore</i>
+      <h4>Explore Links</h4>
+    </div>
+    <div *ngIf="currentPage === 2" class="sidebar-item-active">
+      <i class="material-icons md-36">whatshot</i>
+      <h4>Popular Links</h4>
+    </div>
+    <div *ngIf="currentPage != 2" class="sidebar-item" (click)="gotoPopular()">
+      <i class="material-icons md-36">whatshot</i>
+      <h4>Popular Links</h4>
+    </div>
+    <div *ngIf="currentPage === 3" class="sidebar-item-active">
+      <i class="material-icons md-36">view_list</i>
+      <h4>Link Sets</h4>
+    </div>
+    <div *ngIf="currentPage != 3" class="sidebar-item" (click)="gotoSet()">
+      <i class="material-icons md-36">view_list</i>
+      <h4>Link Sets</h4>
+    </div>
+    <div *ngIf="currentPage === 4" class="sidebar-item-active">
+      <i class="material-icons md-36">people</i>
+      <h4>Friend's Links</h4>
+    </div>
+    <div *ngIf="currentPage != 4" class="sidebar-item" (click)="gotoFriend()">
+      <i class="material-icons md-36">people</i>
+      <h4>Friend's Links</h4>
+    </div>
+    <div class="sidebar-item" (click)="gotoCreate()">
+      <i class="material-icons md-36">add_circle_outline</i>
+      <h4>Create a Link</h4>
+    </div>
+  </div>
+</div>

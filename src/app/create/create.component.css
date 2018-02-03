@@ -1,0 +1,40 @@
+#desktop {
+  position: absolute;
+  left: 20%;
+  top: 75px;
+  width: 60%;
+  height: auto;
+  /*background-color: white;*/
+}
+
+.create-form {
+  margin: 30px;
+  background-color: white;
+}
+
+.link-list {
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.links {
+  margin: 15px;
+  list-style: none;
+}
+
+.badge {
+  margin-right: 10px;
+}
+
+.link-items {
+  margin: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

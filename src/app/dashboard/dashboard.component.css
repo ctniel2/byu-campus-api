@@ -1,0 +1,87 @@
+@media all and (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 769px) {
+
+  /** {*/
+  /*border: 2px solid black;*/
+  /*}*/
+
+  #desktop {
+    /*border: solid 1px black;*/
+    position: absolute;
+    left: 34%;
+    top: 75px;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    /*background-color: white;*/
+  }
+
+  #link-creator {
+    background-color: whitesmoke;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    border: outset 2px whitesmoke;
+    cursor: pointer;
+  }
+
+  #link-creator:active {
+    border: inset 2px whitesmoke;
+  }
+
+  #dashboard-link {
+    background-color: white;
+    margin: 30px auto;
+    display: flex;
+    box-shadow: 10px 10px 5px #888888;
+    position: relative;
+    top: 25px;
+    /*font-size: xx-large;*/
+  }
+
+  #link-icon {
+    margin: auto 20px;
+  }
+
+  #link-name {
+    margin-left: 30px;
+  }
+
+  #link-info {
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #link-description {
+    margin: auto 30px;
+  }
+
+  app-sidebar {
+    /*border: solid 1px black;*/
+    position: fixed;
+    left: 18%;
+    top: 82.5px;
+    width: 15.5%;
+    height: 80%;
+    text-align: left;
+    /*background-color: white;*/
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #336699;
+  }
+
+}

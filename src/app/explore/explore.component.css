@@ -1,0 +1,30 @@
+#desktop {
+  /*border: solid 1px black;*/
+  position: absolute;
+  left: 34%;
+  top: 75px;
+  width: 45%;
+  height: auto;
+  text-align: center;
+  /*background-color: white;*/
+}
+
+h2 {
+  background-color: white;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+app-sidebar {
+  /*border: solid 1px black;*/
+  position: fixed;
+  left: 18%;
+  top: 82.5px;
+  width: 15.5%;
+  height: 80%;
+  text-align: left;
+  /*background-color: white;*/
+}

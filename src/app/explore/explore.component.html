@@ -1,0 +1,19 @@
+<app-sidebar [currentPage]="1"></app-sidebar>
+
+<div id="desktop">
+  <div id="tag">
+    <h2 *ngIf="menu" (click)="tagLinks('school')">School</h2>
+    <h2 *ngIf="menu" (click)="tagLinks('work')">Work</h2>
+    <h2 *ngIf="menu" (click)="tagLinks('communication')">Communication</h2>
+  </div>
+  <div id="link" *ngFor="let link of links; let i = index">
+    <div id="tags" *ngFor="let tag of links[i].tags; let j = index">
+      <div *ngIf="links[i].tags[j] === activeTag">
+        <h4 *ngIf="!menu">{{links[i].name}}</h4>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!menu" (click)="returnToMenu()">
+    Go Back
+  </div>
+</div>

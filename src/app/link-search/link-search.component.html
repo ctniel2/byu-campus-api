@@ -1,0 +1,17 @@
+<div id="search-component">
+  <form>
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Search..." />
+    <button id="search-submit" type="submit"><i class="material-icons">search</i></button>
+  </form>
+
+  <ul class="search-result">
+    <li *ngFor="let link of links$ | async" >
+      <a routerLink="/detail/{{link.id}}">
+        {{link.name}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!--<input id="search-bar" type="search" name="search" placeholder="Search...">-->
+<!--<button id="search-submit" type="submit"><i class="material-icons">search</i></button>-->
