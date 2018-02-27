@@ -95,8 +95,8 @@
   }
 
   #site-logo {
-    width: 5%;
-    height: 3%;
+    width: 4%;
+    height: 2%;
     cursor: pointer;
   }
 
@@ -118,7 +118,7 @@
 
   #user-name {
     position: fixed;
-    top: -2.5%;
+    top: -30px;
     right: 21%;
     z-index: 1000;
     color: white;
@@ -130,10 +130,10 @@
     border: 1px solid grey;
     padding: 2px;
     position: fixed;
-    height: 3%;
+    height: 1%;
     width: 8%;
     left: 22%;
-    top: .5%;
+    top: -2px;
   }
 
   #search-bar {
@@ -158,7 +158,7 @@
   #app-display {
     position: absolute;
     padding-left: 25px;
-    width: 98%;
+    width: 96%;
     z-index: 2;
   }
 

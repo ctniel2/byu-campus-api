@@ -30,8 +30,10 @@ export class CreateComponent implements OnInit {
     description = description.trim();
     url = url.trim();
     if (!name) {
+      alert('Please fill out all the fields!');
       return;
     }
+    alert('New Link Added!');
     this.linkService.addLink({ name, description, url } as Link)
       .subscribe(link => {
         this.links.push(link);

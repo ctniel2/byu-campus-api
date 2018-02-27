@@ -1,5 +1,6 @@
 <div id="desktop">
   <div class="create-form">
+    <h2>Create a new link</h2>
     <label>Link name:<input #linkName /></label>
     <label>Link description:<input #linkDescription /></label>
     <label>Link Url:<input #linkUrl /></label>
@@ -7,15 +8,15 @@
       Add
     </button>
   </div>
-  <div class="link-list">
-    <h2>Current Links</h2>
-    <ul class="links">
-      <li class="link-items" *ngFor="let link of links">
-        <a routerLink="/detail/{{link.id}}">
-          <span class="badge">{{link.id + 1}}</span> {{link.name}}
-        </a>
-        <button class="delete" title="delete link" (click)="delete(link)">x</button>
-      </li>
-    </ul>
-  </div>
-</div>
+  <!--<div class="link-list">-->
+    <!--<h2>Current Links</h2>-->
+    <!--<ul class="links">-->
+      <!--<li class="link-items" *ngFor="let link of links">-->
+        <!--<a routerLink="/detail/{{link.id}}">-->
+          <!--<span class="badge">{{link.id + 1}}</span> {{link.name}}-->
+        <!--</a>-->
+        <!--<button class="delete" title="delete link" (click)="delete(link)">x</button>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</div>-->

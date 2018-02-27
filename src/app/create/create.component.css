@@ -10,15 +10,27 @@
 .create-form {
   margin: 30px;
   background-color: white;
+  font-size: x-large;
 }
 
 .link-list {
   background-color: white;
 }
 
+label {
+  display: block;
+  margin: 10px;
+}
+
+input {
+  margin-left: 10px;
+}
+
 button {
   cursor: pointer;
-  border-radius: 100%;
+  border-radius: 15px;
+  font-size: x-large;
+  margin: 20px;
 }
 
 .links {
