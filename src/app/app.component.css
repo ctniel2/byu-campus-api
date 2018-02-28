@@ -118,7 +118,7 @@
 
   #user-name {
     position: fixed;
-    top: -30px;
+    top: -2.5%;
     right: 21%;
     z-index: 1000;
     color: white;
@@ -133,7 +133,7 @@
     height: 1%;
     width: 8%;
     left: 22%;
-    top: -2px;
+    top: 0.5%;
   }
 
   #search-bar {

@@ -1,5 +1,78 @@
 <app-sidebar [currentPage]="3"></app-sidebar>
 
-<div>
-  I'm the Link Sets page!
+<div id="desktop">
+  <!--<div class="add-link-set" *ngIf="linkSet">-->
+  <div class="add-link-set">
+    <h2>Choose a set of Links</h2>
+    <button id="add-set">Add a Set</button>
+    <!--<i class="material-icons exit-add-link" (click)="addedSetMobile()" style="color: black">clear</i>-->
+    <div *ngIf="BYUSets">
+      <table class="toggle-sets">
+        <tr>
+          <td class="set-titles-active" (click)="toggleBYUSets()">
+            BYU Sets
+          </td>
+          <td class="set-titles-inactive" (click)="toggleOtherSets()">
+            Other Sets
+          </td>
+        </tr>
+      </table>
+      <table class="link-set-table">
+        <tr>
+          <td class="link-set">
+            BYU Homepage Menus
+          </td>
+        </tr>
+        <tr>
+          <td class="link-set">
+            BYU Homepage Favorites
+          </td>
+        </tr>
+        <tr>
+          <td class="link-set">
+            Current RouteY Menus
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div *ngIf="OtherSets">
+      <table class="toggle-sets">
+        <tr>
+          <td class="set-titles-inactive" (click)="toggleBYUSets()">
+            BYU Sets
+          </td>
+          <td class="set-titles-active" (click)="toggleOtherSets()">
+            Other Sets
+          </td>
+        </tr>
+      </table>
+      <table class="link-set-table">
+        <tr>
+          <td class="link-set">
+            Sports
+          </td>
+        </tr>
+        <tr>
+          <td class="link-set">
+            Academics
+          </td>
+        </tr>
+        <tr>
+          <td class="link-set">
+            News
+          </td>
+        </tr>
+        <tr>
+          <td class="link-set">
+            Admin
+          </td>
+        </tr>
+        <tr>
+          <td class="link-set">
+            Finance
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>

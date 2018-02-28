@@ -1,8 +1,21 @@
-div {
-  position: absolute;
-  left: 20%;
-  top: 75px;
-  width: 60%;
-  height: auto;
-  background-color: white;
+#account-image {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  left: 18%;
+  top: 82px;
+  text-align: left;
+  box-shadow: 10px 10px 5px #888888;
 }
+
+#profile-view{
+  position: absolute;
+  left: 34%;
+  top: 75px;
+  width: 800px;
+  height: 100px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 10px 10px 5px #888888;
+}
+
